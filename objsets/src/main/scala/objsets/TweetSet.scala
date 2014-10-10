@@ -231,7 +231,7 @@ object GoogleVsApple {
     group.exists(w => t.text.contains(w))
   }
   lazy val googleTweets: TweetSet = TweetReader.allTweets.filter(t => isBelongsToGroup(t, google))
-  lazy val appleTweets: TweetSet = TweetReader.allTweets.filter(t => isBelongsToGroup(t, google))
+  lazy val appleTweets: TweetSet = TweetReader.allTweets.filter(t => isBelongsToGroup(t, apple))
 
   /**
    * A list of all tweets mentioning a keyword from either apple or google,
